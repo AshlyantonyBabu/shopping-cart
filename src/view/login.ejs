@@ -33,7 +33,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-
+<form action="/admin/check" method="POST">
   <div class="site-wrap">
 
     <div class="site-mobile-menu site-navbar-target">
@@ -104,7 +104,7 @@
                             <label for="" class="label1" style="color: antiquewhite">Username</label>
                         </td>
                         <td style="border-top: none">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="uname1">
                         </td>
 
                     </tr>
@@ -113,15 +113,15 @@
                             <label for="" class="label1" style="color: antiquewhite">Password</label>
                         </td>
                         <td style="border-top: none">
-                            <input type="password" class="form-control">
+                            <input type="password" class="form-control" name="pass1">
                         </td>
                         <tr style="border-top: none">
                             <td style="border-top: none">
-                                <input type="button " class="btn btn-info" value="Sign up">
+                               <a href="/register" style="color: bisque">Sign up..here</a>
 
                             </td>
                             <td style="border-top: none">
-                                <input type="button" class= "btn btn-success"  value="Sign in">
+                                <input type="submit" class= "btn btn-success"  value="Sign in">
                             </td>
                         </tr>
           
@@ -389,7 +389,7 @@
 
 
   <script src="js/main.js"></script>
-
+</form>
 </body>
 
 </html>
